@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000210] (ORB_SLAM3) JobQueued: {'identifier': 'ORB_SLAM3', 'dependencies': OrderedDict()}
+[0.000247] (ORB_SLAM3) JobStarted: {'identifier': 'ORB_SLAM3'}
+[0.006466] (ORB_SLAM3) JobProgress: {'identifier': 'ORB_SLAM3', 'progress': 'cmake'}
+[0.006565] (ORB_SLAM3) Command: {'cmd': ['/usr/bin/cmake', '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3', '-DCMAKE_INSTALL_PREFIX=/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/install/ORB_SLAM3'], 'cwd': '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hvk'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hvk'), ('OLDPWD', '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '2902'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu-xorg.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hvk'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu-xorg.default.path'), ('USERNAME', 'hvk'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hvk/.cargo/bin:/home/hvk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin'), ('SESSION_MANAGER', 'local/uss-voyager:@/tmp/.ICE-unix/2882,unix/uss-voyager:/tmp/.ICE-unix/2882'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/93682980_76cf_41e2_a9d2_098012e3dc66'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.446'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.013200] (ORB_SLAM3) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.013310] (ORB_SLAM3) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.013351] (ORB_SLAM3) StderrLine: {'line': b'  CMake.\n'}
+[0.013389] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.013427] (ORB_SLAM3) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.013464] (ORB_SLAM3) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.013502] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.013539] (ORB_SLAM3) StderrLine: {'line': b'\x1b[0m\n'}
+[0.048703] (ORB_SLAM3) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.090781] (ORB_SLAM3) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.096453] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.098830] (-) TimerEvent: {}
+[0.150740] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.157036] (ORB_SLAM3) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.157238] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.157489] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.160038] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199013] (-) TimerEvent: {}
+[0.219906] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.225406] (ORB_SLAM3) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.225536] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.225999] (ORB_SLAM3) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.227560] (ORB_SLAM3) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX11\n'}
+[0.292534] (ORB_SLAM3) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX11 - Success\n'}
+[0.293171] (ORB_SLAM3) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX0X\n'}
+[0.299114] (-) TimerEvent: {}
+[0.349610] (ORB_SLAM3) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX0X - Success\n'}
+[0.349747] (ORB_SLAM3) StdoutLine: {'line': b'-- Using flag -std=c++11.\n'}
+[0.361310] (ORB_SLAM3) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.365489] (ORB_SLAM3) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:57 (add_executable):\n'}
+[0.365578] (ORB_SLAM3) StderrLine: {'line': b'  Policy CMP0003 should be set before this line.  Add code such as\n'}
+[0.365624] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.365670] (ORB_SLAM3) StderrLine: {'line': b'    if(COMMAND cmake_policy)\n'}
+[0.365710] (ORB_SLAM3) StderrLine: {'line': b'      cmake_policy(SET CMP0003 NEW)\n'}
+[0.365749] (ORB_SLAM3) StderrLine: {'line': b'    endif(COMMAND cmake_policy)\n'}
+[0.365787] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.365825] (ORB_SLAM3) StderrLine: {'line': b'  as early as possible but after the most recent call to\n'}
+[0.365863] (ORB_SLAM3) StderrLine: {'line': b'  cmake_minimum_required or cmake_policy(VERSION).  This warning appears\n'}
+[0.365902] (ORB_SLAM3) StderrLine: {'line': b'  because target "Mono" links to some libraries for which the linker must\n'}
+[0.365940] (ORB_SLAM3) StderrLine: {'line': b'  search:\n'}
+[0.365978] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.366015] (ORB_SLAM3) StderrLine: {'line': b'    -lboost_system\n'}
+[0.366052] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.366090] (ORB_SLAM3) StderrLine: {'line': b'  and other libraries with known full path:\n'}
+[0.366127] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.366165] (ORB_SLAM3) StderrLine: {'line': b'    /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d\n'}
+[0.366203] (ORB_SLAM3) StderrLine: {'line': b'    /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/../../Thirdparty/DBoW2/lib/libDBoW2.so\n'}
+[0.366242] (ORB_SLAM3) StderrLine: {'line': b'    /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/../../Thirdparty/g2o/lib/libg2o.so\n'}
+[0.366281] (ORB_SLAM3) StderrLine: {'line': b'    /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/../../lib/libORB_SLAM3.so\n'}
+[0.366319] (ORB_SLAM3) StderrLine: {'line': b'\n'}
+[0.366357] (ORB_SLAM3) StderrLine: {'line': b'  CMake is adding directories in the second list to the linker search path in\n'}
+[0.366395] (ORB_SLAM3) StderrLine: {'line': b'  case they are needed to find libraries from the first list (for backwards\n'}
+[0.366433] (ORB_SLAM3) StderrLine: {'line': b'  compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable\n'}
+[0.366469] (ORB_SLAM3) StderrLine: {'line': b'  or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for\n'}
+[0.366506] (ORB_SLAM3) StderrLine: {'line': b'  more information.\n'}
+[0.366544] (ORB_SLAM3) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.366582] (ORB_SLAM3) StderrLine: {'line': b'\x1b[0m\n'}
+[0.392219] (ORB_SLAM3) StdoutLine: {'line': b'-- Generating done\n'}
+[0.392980] (ORB_SLAM3) StdoutLine: {'line': b'-- Build files have been written to: /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3\n'}
+[0.395947] (ORB_SLAM3) CommandEnded: {'returncode': 0}
+[0.396355] (ORB_SLAM3) JobProgress: {'identifier': 'ORB_SLAM3', 'progress': 'build'}
+[0.396909] (ORB_SLAM3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3', '--', '-j8', '-l8'], 'cwd': '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hvk'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/hvk'), ('OLDPWD', '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '2902'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu-xorg.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hvk'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu-xorg.default.path'), ('USERNAME', 'hvk'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/home/hvk/.cargo/bin:/home/hvk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin'), ('SESSION_MANAGER', 'local/uss-voyager:@/tmp/.ICE-unix/2882,unix/uss-voyager:/tmp/.ICE-unix/2882'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/93682980_76cf_41e2_a9d2_098012e3dc66'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.446'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.399198] (-) TimerEvent: {}
+[0.432016] (ORB_SLAM3) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/Mono.dir/src/ros_mono.o\x1b[0m\n'}
+[0.432304] (ORB_SLAM3) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/MonoAR.dir/src/AR/ViewerAR.o\x1b[0m\n'}
+[0.432399] (ORB_SLAM3) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/MonoAR.dir/src/AR/ros_mono_ar.o\x1b[0m\n'}
+[0.432529] (ORB_SLAM3) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/Mono_Inertial.dir/src/ros_mono_inertial.o\x1b[0m\n'}
+[0.433981] (ORB_SLAM3) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/Stereo.dir/src/ros_stereo.o\x1b[0m\n'}
+[0.434157] (ORB_SLAM3) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/Stereo_Inertial.dir/src/ros_stereo_inertial.o\x1b[0m\n'}
+[0.434227] (ORB_SLAM3) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/RGBD.dir/src/ros_rgbd.o\x1b[0m\n'}
+[0.470239] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_rgbd.cc:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kros/ros.h: No such file or directory\n'}
+[0.470426] (ORB_SLAM3) StderrLine: {'line': b'   25 | #include\x1b[01;31m\x1b[K<ros/ros.h>\x1b[m\x1b[K\n'}
+[0.470485] (ORB_SLAM3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.470539] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.471456] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/RGBD.dir/build.make:76: CMakeFiles/RGBD.dir/src/ros_rgbd.o] Error 1\n'}
+[0.471649] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/RGBD.dir/all] Error 2\n'}
+[0.471736] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.491662] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/AR/ros_mono_ar.cc:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kros/ros.h: No such file or directory\n'}
+[0.491865] (ORB_SLAM3) StderrLine: {'line': b'   25 | #include\x1b[01;31m\x1b[K<ros/ros.h>\x1b[m\x1b[K\n'}
+[0.491929] (ORB_SLAM3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.491987] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.492043] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_mono.cc:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kros/ros.h: No such file or directory\n'}
+[0.492101] (ORB_SLAM3) StderrLine: {'line': b'   25 | #include\x1b[01;31m\x1b[K<ros/ros.h>\x1b[m\x1b[K\n'}
+[0.492157] (ORB_SLAM3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.492224] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.492715] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_stereo.cc:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kros/ros.h: No such file or directory\n'}
+[0.492800] (ORB_SLAM3) StderrLine: {'line': b'   25 | #include\x1b[01;31m\x1b[K<ros/ros.h>\x1b[m\x1b[K\n'}
+[0.492860] (ORB_SLAM3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.492917] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.493365] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/MonoAR.dir/build.make:76: CMakeFiles/MonoAR.dir/src/AR/ros_mono_ar.o] Error 1\n'}
+[0.493459] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Mono.dir/build.make:76: CMakeFiles/Mono.dir/src/ros_mono.o] Error 1\n'}
+[0.493503] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[0.493556] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:93: CMakeFiles/Mono.dir/all] Error 2\n'}
+[0.493974] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Stereo.dir/build.make:76: CMakeFiles/Stereo.dir/src/ros_stereo.o] Error 1\n'}
+[0.494079] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/Stereo.dir/all] Error 2\n'}
+[0.497722] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_mono_inertial.cc:28:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kros/ros.h: No such file or directory\n'}
+[0.497785] (ORB_SLAM3) StderrLine: {'line': b'   28 | #include\x1b[01;31m\x1b[K<ros/ros.h>\x1b[m\x1b[K\n'}
+[0.497827] (ORB_SLAM3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.497869] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.498523] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_stereo_inertial.cc:28:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kros/ros.h: No such file or directory\n'}
+[0.498600] (ORB_SLAM3) StderrLine: {'line': b'   28 | #include\x1b[01;31m\x1b[K<ros/ros.h>\x1b[m\x1b[K\n'}
+[0.498655] (ORB_SLAM3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.498707] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.498987] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Mono_Inertial.dir/build.make:76: CMakeFiles/Mono_Inertial.dir/src/ros_mono_inertial.o] Error 1\n'}
+[0.499035] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/Mono_Inertial.dir/all] Error 2\n'}
+[0.499257] (-) TimerEvent: {}
+[0.499628] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Stereo_Inertial.dir/build.make:76: CMakeFiles/Stereo_Inertial.dir/src/ros_stereo_inertial.o] Error 1\n'}
+[0.499759] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/Stereo_Inertial.dir/all] Error 2\n'}
+[0.546603] (ORB_SLAM3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/AR/ViewerAR.cc:19\x1b[m\x1b[K:\n'}
+[0.546768] (ORB_SLAM3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/AR/ViewerAR.h:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kpangolin/pangolin.h: No such file or directory\n'}
+[0.546821] (ORB_SLAM3) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K<pangolin/pangolin.h>\x1b[m\x1b[K\n'}
+[0.546868] (ORB_SLAM3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.546941] (ORB_SLAM3) StderrLine: {'line': b'compilation terminated.\n'}
+[0.548906] (ORB_SLAM3) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/MonoAR.dir/build.make:90: CMakeFiles/MonoAR.dir/src/AR/ViewerAR.o] Error 1\n'}
+[0.549032] (ORB_SLAM3) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:119: CMakeFiles/MonoAR.dir/all] Error 2\n'}
+[0.549116] (ORB_SLAM3) StderrLine: {'line': b'gmake: *** [Makefile:91: all] Error 2\n'}
+[0.550534] (ORB_SLAM3) CommandEnded: {'returncode': 2}
+[0.550821] (ORB_SLAM3) JobEnded: {'identifier': 'ORB_SLAM3', 'rc': 2}
+[0.561212] (-) EventReactorShutdown: {}

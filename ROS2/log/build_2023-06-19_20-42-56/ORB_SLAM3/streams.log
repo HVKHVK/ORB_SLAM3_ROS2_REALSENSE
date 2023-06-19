@@ -1,0 +1,112 @@
+[0.007s] Invoking command in '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3': /usr/bin/cmake /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3 -DCMAKE_INSTALL_PREFIX=/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/install/ORB_SLAM3
+[0.013s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.013s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.013s]   CMake.
+[0.013s] 
+[0.013s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.013s]   CMake that the project does not need compatibility with older versions.
+[0.013s] 
+[0.013s] [0m
+[0.049s] -- The C compiler identification is GNU 11.3.0
+[0.091s] -- The CXX compiler identification is GNU 11.3.0
+[0.096s] -- Detecting C compiler ABI info
+[0.151s] -- Detecting C compiler ABI info - done
+[0.157s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.157s] -- Detecting C compile features
+[0.157s] -- Detecting C compile features - done
+[0.160s] -- Detecting CXX compiler ABI info
+[0.220s] -- Detecting CXX compiler ABI info - done
+[0.225s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.225s] -- Detecting CXX compile features
+[0.226s] -- Detecting CXX compile features - done
+[0.227s] -- Performing Test COMPILER_SUPPORTS_CXX11
+[0.292s] -- Performing Test COMPILER_SUPPORTS_CXX11 - Success
+[0.293s] -- Performing Test COMPILER_SUPPORTS_CXX0X
+[0.349s] -- Performing Test COMPILER_SUPPORTS_CXX0X - Success
+[0.350s] -- Using flag -std=c++11.
+[0.361s] -- Configuring done
+[0.365s] [33mCMake Warning (dev) at CMakeLists.txt:57 (add_executable):
+[0.365s]   Policy CMP0003 should be set before this line.  Add code such as
+[0.365s] 
+[0.365s]     if(COMMAND cmake_policy)
+[0.365s]       cmake_policy(SET CMP0003 NEW)
+[0.366s]     endif(COMMAND cmake_policy)
+[0.366s] 
+[0.366s]   as early as possible but after the most recent call to
+[0.366s]   cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+[0.366s]   because target "Mono" links to some libraries for which the linker must
+[0.366s]   search:
+[0.366s] 
+[0.366s]     -lboost_system
+[0.366s] 
+[0.366s]   and other libraries with known full path:
+[0.366s] 
+[0.366s]     /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
+[0.366s]     /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/../../Thirdparty/DBoW2/lib/libDBoW2.so
+[0.366s]     /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/../../Thirdparty/g2o/lib/libg2o.so
+[0.366s]     /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/../../lib/libORB_SLAM3.so
+[0.366s] 
+[0.366s]   CMake is adding directories in the second list to the linker search path in
+[0.366s]   case they are needed to find libraries from the first list (for backwards
+[0.366s]   compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+[0.366s]   or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+[0.366s]   more information.
+[0.366s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.366s] [0m
+[0.392s] -- Generating done
+[0.393s] -- Build files have been written to: /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3
+[0.396s] Invoked command in '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3' returned '0': /usr/bin/cmake /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3 -DCMAKE_INSTALL_PREFIX=/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/install/ORB_SLAM3
+[0.397s] Invoking command in '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3': /usr/bin/cmake --build /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3 -- -j8 -l8
+[0.432s] [ 23%] [32mBuilding CXX object CMakeFiles/Mono.dir/src/ros_mono.o[0m
+[0.432s] [ 23%] [32mBuilding CXX object CMakeFiles/MonoAR.dir/src/AR/ViewerAR.o[0m
+[0.432s] [ 23%] [32mBuilding CXX object CMakeFiles/MonoAR.dir/src/AR/ros_mono_ar.o[0m
+[0.432s] [ 30%] [32mBuilding CXX object CMakeFiles/Mono_Inertial.dir/src/ros_mono_inertial.o[0m
+[0.434s] [ 38%] [32mBuilding CXX object CMakeFiles/Stereo.dir/src/ros_stereo.o[0m
+[0.434s] [ 53%] [32mBuilding CXX object CMakeFiles/Stereo_Inertial.dir/src/ros_stereo_inertial.o[0m
+[0.434s] [ 53%] [32mBuilding CXX object CMakeFiles/RGBD.dir/src/ros_rgbd.o[0m
+[0.470s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_rgbd.cc:25:9:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.470s]    25 | #include[01;31m[K<ros/ros.h>[m[K
+[0.470s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.470s] compilation terminated.
+[0.471s] gmake[2]: *** [CMakeFiles/RGBD.dir/build.make:76: CMakeFiles/RGBD.dir/src/ros_rgbd.o] Error 1
+[0.471s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/RGBD.dir/all] Error 2
+[0.472s] gmake[1]: *** Waiting for unfinished jobs....
+[0.492s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/AR/ros_mono_ar.cc:25:9:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.492s]    25 | #include[01;31m[K<ros/ros.h>[m[K
+[0.492s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.492s] compilation terminated.
+[0.492s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_mono.cc:25:9:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.492s]    25 | #include[01;31m[K<ros/ros.h>[m[K
+[0.492s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.492s] compilation terminated.
+[0.493s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_stereo.cc:25:9:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.493s]    25 | #include[01;31m[K<ros/ros.h>[m[K
+[0.493s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.493s] compilation terminated.
+[0.493s] gmake[2]: *** [CMakeFiles/MonoAR.dir/build.make:76: CMakeFiles/MonoAR.dir/src/AR/ros_mono_ar.o] Error 1
+[0.493s] gmake[2]: *** [CMakeFiles/Mono.dir/build.make:76: CMakeFiles/Mono.dir/src/ros_mono.o] Error 1
+[0.493s] gmake[2]: *** Waiting for unfinished jobs....
+[0.493s] gmake[1]: *** [CMakeFiles/Makefile2:93: CMakeFiles/Mono.dir/all] Error 2
+[0.494s] gmake[2]: *** [CMakeFiles/Stereo.dir/build.make:76: CMakeFiles/Stereo.dir/src/ros_stereo.o] Error 1
+[0.494s] gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/Stereo.dir/all] Error 2
+[0.498s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_mono_inertial.cc:28:9:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.498s]    28 | #include[01;31m[K<ros/ros.h>[m[K
+[0.498s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.498s] compilation terminated.
+[0.498s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/ros_stereo_inertial.cc:28:9:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.498s]    28 | #include[01;31m[K<ros/ros.h>[m[K
+[0.498s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[0.498s] compilation terminated.
+[0.499s] gmake[2]: *** [CMakeFiles/Mono_Inertial.dir/build.make:76: CMakeFiles/Mono_Inertial.dir/src/ros_mono_inertial.o] Error 1
+[0.499s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/Mono_Inertial.dir/all] Error 2
+[0.499s] gmake[2]: *** [CMakeFiles/Stereo_Inertial.dir/build.make:76: CMakeFiles/Stereo_Inertial.dir/src/ros_stereo_inertial.o] Error 1
+[0.500s] gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/Stereo_Inertial.dir/all] Error 2
+[0.546s] In file included from [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/AR/ViewerAR.cc:19[m[K:
+[0.547s] [01m[K/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/ORB_SLAM3/src/AR/ViewerAR.h:25:10:[m[K [01;31m[Kfatal error: [m[Kpangolin/pangolin.h: No such file or directory
+[0.547s]    25 | #include [01;31m[K<pangolin/pangolin.h>[m[K
+[0.547s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.547s] compilation terminated.
+[0.549s] gmake[2]: *** [CMakeFiles/MonoAR.dir/build.make:90: CMakeFiles/MonoAR.dir/src/AR/ViewerAR.o] Error 1
+[0.549s] gmake[1]: *** [CMakeFiles/Makefile2:119: CMakeFiles/MonoAR.dir/all] Error 2
+[0.549s] gmake: *** [Makefile:91: all] Error 2
+[0.550s] Invoked command in '/home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3' returned '2': /usr/bin/cmake --build /home/hvk/Developments/projects_ws/ORB_SLAM3_ROS2_REALSENSE/ROS2/build/ORB_SLAM3 -- -j8 -l8
