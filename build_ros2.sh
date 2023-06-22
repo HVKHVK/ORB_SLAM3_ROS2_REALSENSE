@@ -44,7 +44,7 @@ cd ..
 echo "Configuring and building ORB_SLAM3 ..."
 
 mkdir build
-cd buil
+cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j2
 cd ..
@@ -52,4 +52,4 @@ echo $PWD
 echo "Building ROS nodes"
 
 cd ROS2
-colcon build --parallel-workers 4
+colcon build --parallel-workers 2

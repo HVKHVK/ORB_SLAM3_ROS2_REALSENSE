@@ -64,10 +64,13 @@ Thirdparty/DBoW2/lib/
 Thirdparty/g2o/build/
 Thirdparty/g2o/config.h
 Thirdparty/g2o/lib/
+Thirdparty/Pangolin/lib/
+Thirdparty/Pangolin/build/
 Vocabulary/ORBvoc.txt
 build/
-
+install/
 lib/
+log/
 
 cmake_modules/
 cmake-build-debug/
@@ -91,3 +94,7 @@ my_settings.txt
 borrar/*
 
 */ExecMean.txt
+
+ROS2/ORB_SLAM3/.vscode/c_cpp_properties.json
+ROS2/ORB_SLAM3/.vscode/settings.json
+.gitignore

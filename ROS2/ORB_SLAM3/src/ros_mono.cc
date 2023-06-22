@@ -22,46 +22,47 @@
 #include<fstream>
 #include<chrono>
 
-#include<ros/ros.h>
+#include <rclcpp/rclcpp.hpp>
 #include <cv_bridge/cv_bridge.h>
-
-#include<opencv2/core/core.hpp>
-
+#include <opencv2/core/core.hpp>
 #include"../../../include/System.h"
 
-using namespace std;
+#include <sensor_msgs/msg/image.hpp>
 
-class ImageGrabber
+class ImageGrabber: public rclcpp::Node
 {
-public:
-    ImageGrabber(ORB_SLAM3::System* pSLAM):mpSLAM(pSLAM){}
+    public:
+        ImageGrabber(ORB_SLAM3::System* pSLAM): 
+            Node("Mono"),
+            mpSLAM(pSLAM)
+            {
+                sub_ = this->create_subscription<sensor_msgs::msg::Image>("/camera/image_raw", 1, std::bind(&ImageGrabber::GrabImage, this, std::placeholders::_1));
+            }
 
-    void GrabImage(const sensor_msgs::ImageConstPtr& msg);
+        void GrabImage(const sensor_msgs::msg::Image::ConstPtr& msg);
+        ORB_SLAM3::System* mpSLAM;
 
-    ORB_SLAM3::System* mpSLAM;
+   private:
+        rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr sub_;
 };
+
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "Mono");
-    ros::start();
-
+    rclcpp::init(argc, argv);
+    // rclcpp::start();
+    //rclcpp::Node::SharedPtr node = rclcpp::Node::make_shared("Mono");
     if(argc != 3)
     {
         cerr << endl << "Usage: rosrun ORB_SLAM3 Mono path_to_vocabulary path_to_settings" << endl;        
-        ros::shutdown();
+        rclcpp::shutdown();
         return 1;
     }    
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
     ORB_SLAM3::System SLAM(argv[1],argv[2],ORB_SLAM3::System::MONOCULAR,true);
 
-    ImageGrabber igb(&SLAM);
-
-    ros::NodeHandle nodeHandler;
-    ros::Subscriber sub = nodeHandler.subscribe("/camera/image_raw", 1, &ImageGrabber::GrabImage,&igb);
-
-    ros::spin();
+    rclcpp::spin(std::make_shared<ImageGrabber>(&SLAM));
 
     // Stop all threads
     SLAM.Shutdown();
@@ -69,12 +70,12 @@ int main(int argc, char **argv)
     // Save camera trajectory
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
 
-    ros::shutdown();
+    rclcpp::shutdown();
 
     return 0;
 }
 
-void ImageGrabber::GrabImage(const sensor_msgs::ImageConstPtr& msg)
+void ImageGrabber::GrabImage(const sensor_msgs::msg::Image::ConstPtr& msg)
 {
     // Copy the ros image message to cv::Mat.
     cv_bridge::CvImageConstPtr cv_ptr;
@@ -84,11 +85,11 @@ void ImageGrabber::GrabImage(const sensor_msgs::ImageConstPtr& msg)
     }
     catch (cv_bridge::Exception& e)
     {
-        ROS_ERROR("cv_bridge exception: %s", e.what());
+        RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
         return;
     }
 
-    mpSLAM->TrackMonocular(cv_ptr->image,cv_ptr->header.stamp.toSec());
+    mpSLAM->TrackMonocular(cv_ptr->image,cv_ptr->header.stamp.sec);
 }
 
 
