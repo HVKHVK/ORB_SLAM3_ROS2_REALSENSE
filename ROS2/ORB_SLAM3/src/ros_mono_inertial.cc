@@ -70,7 +70,6 @@ public:
     std::mutex ImageBufMutex;
    
     ORB_SLAM3::System* mpSLAM;
-    ImuGrabber ImuGb;
 
     const bool mbClahe;
     cv::Ptr<cv::CLAHE> mClahe = cv::createCLAHE(3.0, cv::Size(8, 8));
@@ -88,7 +87,6 @@ int main(int argc, char **argv)
     rclcpp::shutdown();
     return 1;
   }
-
 
   if(argc==4)
   {
@@ -186,7 +184,7 @@ void ImageGrabber::SyncWithImu()
   }
 }
 
-void ImuGrabber::GrabImu(const sensor_msgs::msg::Imu::ConstPtr  &imu_msg)
+void ImuGrabber::GrabImu(const sensor_msgs::msg::Imu::ConstPtr &imu_msg)
 {
   ImuBufMutex.lock();
   imuBuf.push(imu_msg);
